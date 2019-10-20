@@ -1,0 +1,25 @@
+22pF, 2buc, C1 C2,      https://ro.farnell.com/vishay/k220j15c0gf53l2/cap-22pf-50v-5-c0g-np0/dp/1141760
+10nF, 2buc, C7 C8,      https://ro.farnell.com/multicomp/mc0805y103m500a5-08mm/cap-0-01-f-50v-20-y5v/dp/2309024
+1uF, 1buc, C5,          https://ro.farnell.com/multicomp/mcnp35v105m5x11/cap-1-f-35v-20/dp/1236666
+2.2uF, 3buc, C3 C4 C6,  https://ro.farnell.com/multicomp/mcksk100m2r2d11s/cap-2-2-f-100v-20/dp/2610808
+10uF, 1buc, C9,         https://ro.farnell.com/multicomp/mcgpr16v106m5x11/cap-10-f-16v-20/dp/9451056
+
+led5mm, 1buc, D1,       https://ro.farnell.com/multicomp/mcl053pd/led-5mm-36-hi-red/dp/1581136
+
+100R, 2buc, R1 R2,      https://ro.farnell.com/multicomp/mf25-100r/res-100r-1-250mw-axial-metal-film/dp/9341099
+1k, 2buc, R3 R4,        https://ro.farnell.com/multicomp/mcf-0-25w-1k/res-1k-5-250mw-axial-carbon-film/dp/9339051
+
+12MHz xtal, Y1, 1buc,   https://ro.farnell.com/qantek-technology-corporation/qcl12-0000f18b23b/crystal-12mhz-18pf-hc-49us/dp/2508453
+
+terminal 2way 5.08pitch, 2buc, J1 J3,        https://ro.farnell.com/wago/235-402-331-000/terminal-block-wire-to-brd-2pos/dp/1891596
+
+USB B, J2, 1buc,    https://ro.farnell.com/multicomp/usb-b-s-ra/usb-2-0-type-b-receptacle-th/dp/2112373
+
+NPN, Q1, 1buc,      https://ro.farnell.com/stmicroelectronics/tip50/transistor-npn-to-220/dp/1467926
+7805, U5, 1buc,     https://ro.farnell.com/stmicroelectronics/l7805cv/ic-v-reg-5-0v-7805-to-220-3/dp/9756078
+
+MCP2210 SOIC, U4, 1buc,     https://ro.farnell.com/microchip/mcp2210-i-so/ic-usb-to-spi-converter-20soic/dp/2078574
+MCP4921, U1, 1buc,  https://ro.farnell.com/microchip/mcp4921-e-p/12bit-dac-singl-spi-i-f-mcp4921/dp/1332112
+MCP3204, U2, 1buc,  https://ro.farnell.com/microchip/mcp3204-ci-p/ic-12bit-adc-3204-dip14/dp/9758593
+MCP6002, U3, 1buc,  https://ro.farnell.com/microchip/mcp6002-i-p/ic-op-amp-1-8v-1mhz-dual-pdip8/dp/1292245
+MAX6241, U6, 1buc,  https://ro.farnell.com/maxim-integrated-products/max6241bcpa/voltage-ref-series-4-096v-dip/dp/2511209

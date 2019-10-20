@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Caracterograf</title>
+
+  <link href="./screen.css" rel="stylesheet" />
+  <link href="./custom.css" rel="stylesheet" />
+  <link href="./styles.css" rel="stylesheet" />
+
+  <style>
+    #chart {
+      max-width: 650px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  <h1>Caracterograf</h1>
+    <div id="chart">
+
+    </div>
+    <div><br/><br/>
+      <h3>Data menu</h3>
+      <table style="width:650px">
+        <tr>
+          <td>
+            <button onclick="refresh1()">Refresh Series 1</button>
+          </td> 
+          <td>    
+            <button onclick="clear1()">Clear Series 1</button> 
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="refresh2()">Refresh Series 2</button> 
+          </td>
+          <td>
+            <button onclick="clear2()">Clear Series 2</button> 
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <button onclick="refresh3()">Refresh Series 3</button> 
+          </td>
+          <td>
+            <button onclick="clear3()">Clear Series 3</button> 
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts@latest"></script>
+  <script>
+
+    var options = {
+      chart: {
+        type: 'area',
+        stacked: false,
+        height: 350,
+        zoom: {
+          type: 'xy',
+          enabled: true
+        },
+        toolbar: {
+          autoSelected: 'zoom'
+        }
+      },
+      dataLabels: {
+        enabled: false
+      },
+      series: [],
+      grid: {
+        xaxis: {
+          lines: {
+            show: true,
+          },
+        },
+        yaxis: {
+          lines: {
+            show: true,
+          },
+        },
+      },
+      yaxis: {
+        title: {
+          text: 'Curent [mA]'
+        },
+        labels: {
+          formatter: function (value) {
+            return value.toFixed(2) + " mA";
+          },
+        },
+      },
+      xaxis: {
+        title: {
+          text: 'Tensiune [V]',
+        },
+        labels: {
+          formatter: function (value) {
+            return value.toFixed(3) + "V";
+          },
+        },
+      },
+    }
+
+    var chart = new ApexCharts(
+      document.querySelector("#chart"),
+      options
+    );
+
+    chart.render();
+  </script>
+  <script src="./renderer.js"></script>
+</body>
+</html>
