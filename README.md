@@ -10,7 +10,15 @@
 * Frontend done using electron.js and apex charts.
 * It uses `npm`.
 * To build, run `npm install`.
-* To run, copy the `tracer` binary from the driver in the same location as the rest of the files, add the `setuid` bit and run `npm start`.
+* To run, copy the `tracer` binary from the driver in the same location as the rest of the files, add the `setuid` bit and run `npm start`. See the snippet below.
+
+```bash
+cd frontend
+cp ../backend/tracer .
+sudo chown root tracer
+sudo chmod +s tracer
+npm start
+```
 
 ## The "board" directory
 
