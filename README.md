@@ -2,6 +2,7 @@
 
 ## The "driver" folder
 
+* Prerequisites: `libudev1` and `g++` installed (`sudo apt-get install libudev1 build-essential`).
 * Driver based on Kerry Wong's library (<https://github.com/kerrydwong/MCP2210-Library>).
 * To build the driver-application, run `cd driver; make`. It will generate the `tracer` binary, which should be run as root (or with the `setuid` bit set).
 
