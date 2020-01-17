@@ -3,10 +3,8 @@
   "scripts": {
     "start": "electron --no-sandbox --no-setuid-sandbox ."
   },
-  "devDependencies": {
-    "electron": "^7.1.3"
-  },
   "dependencies": {
-    "apexcharts": "^3.8.4"
+    "apexcharts": "3.14.x",
+    "electron": "^7.1.9"
   }
 }
