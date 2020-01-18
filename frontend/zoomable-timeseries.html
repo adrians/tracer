@@ -5,7 +5,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Caracterograf</title>
 
   <link href="./screen.css" rel="stylesheet" />
@@ -30,26 +29,26 @@
       <table style="width:650px">
         <tr>
           <td>
-            <button onclick="refresh1()">Refresh Series 1</button>
+            <button onclick="refresh(1)">Refresh Series 1</button>
           </td> 
           <td>    
-            <button onclick="clear1()">Clear Series 1</button> 
+            <button onclick="clearSeries(1)">Clear Series 1</button> 
           </td>
         </tr>
         <tr>
           <td>
-            <button onclick="refresh2()">Refresh Series 2</button> 
+            <button onclick="refresh(2)">Refresh Series 2</button> 
           </td>
           <td>
-            <button onclick="clear2()">Clear Series 2</button> 
+            <button onclick="clearSeries(2)">Clear Series 2</button> 
           </td>
         </tr>
         <tr>
           <td>
-            <button onclick="refresh3()">Refresh Series 3</button> 
+            <button onclick="refresh(3)">Refresh Series 3</button> 
           </td>
           <td>
-            <button onclick="clear3()">Clear Series 3</button> 
+            <button onclick="clearSeries(3)">Clear Series 3</button> 
           </td>
         </tr>
       </table>
@@ -57,7 +56,6 @@
   </div>
   <script src="./node_modules/apexcharts/dist/apexcharts.min.js"></script>
   <script>
-
     var options = {
       chart: {
         type: 'area',
