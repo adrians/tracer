@@ -20,6 +20,8 @@
 
 using namespace std;
 
+static SPITransferSettingsDef def;
+
 void initTracer(hid_device* handle) {
     ChipSettingsDef chipDef;
 
@@ -43,13 +45,10 @@ void initTracer(hid_device* handle) {
         printf("Error setting SPI parameters.\n");
         return;
     }
+    def = GetSPITransferSettings(handle);
 }
 
 void SetMCP4921(hid_device* handle, uint16_t input) {
-    //configure SPI
-    SPITransferSettingsDef def;
-    def = GetSPITransferSettings(handle);
-
     //chip select is GP0
     def.ActiveChipSelectValue = 0xfffe;
     def.IdleChipSelectValue = 0xffff;
@@ -70,10 +69,6 @@ void SetMCP4921(hid_device* handle, uint16_t input) {
 }
 
 uint16_t GetMCP3204(hid_device* handle, uint8_t channel) {
-    //configure SPI
-    SPITransferSettingsDef def;
-    def = GetSPITransferSettings(handle);
-
     //chip select is GP0
     def.ActiveChipSelectValue = 0xfffd;
     def.IdleChipSelectValue = 0xffff;

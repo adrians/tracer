@@ -101,7 +101,11 @@
         },
         labels: {
           formatter: function (value) {
-            return value.toFixed(3) + "V";
+            if(typeof value !== 'undefined') {
+              return value.toFixed(3) + "V";
+            } else {
+              return "0";
+            }
           },
         },
       },
