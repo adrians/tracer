@@ -1,5 +1,7 @@
 # Electronic tracer
 
+![Screenshot](/doc/screenshot.png)
+
 ## The "driver" folder
 
 * Prerequisites: `libudev1` and `g++` installed (`sudo apt-get install libudev1 build-essential`).
