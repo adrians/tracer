@@ -32,4 +32,5 @@ function updateSeries(){
 	}
 	
 	chart.updateSeries(list);
+	document.getElementById("dump").value = JSON.stringify(data, null, 2);
 }
