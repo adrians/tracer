@@ -21,6 +21,7 @@
 * It uses `npm`.
 * To build, run `npm install`.
 * To run, copy the `tracer` binary (from either `driver-v1` or `driver-mock` directories), and then run `npm start`.
+* Tested with node 14.x.
 
 The `driver-v1` requires setuid permissions. See the snippet below.
 
