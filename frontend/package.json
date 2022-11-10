@@ -5,6 +5,6 @@
   },
   "dependencies": {
     "apexcharts": "3.14.x",
-    "electron": "11.x"
+    "electron": "18.x"
   }
 }
